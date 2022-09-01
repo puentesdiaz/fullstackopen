@@ -22,13 +22,13 @@ function App(props) {
 
   return (
     <div>
-      {props.anecdotes[selected]}
+      {props.anecdotes[selected]} 
+      <p>
+        has {points[selected]} votes.
+      </p>
       <p>
         <button onClick={() => {handleVote()}}>vote</button>
         <button onClick={()=>{handleNextSelected()}}>next anecdotes</button>
-      </p>
-      <p>
-        {JSON.stringify(points)}
       </p>
     </div>
   )
