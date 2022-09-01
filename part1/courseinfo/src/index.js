@@ -16,19 +16,23 @@ const Content = (props) => {
   const part2 = 'Using props to pass data'
   const part3 = 'State of a component'
   return (
+    [
+      <Part part={part1} exercises={props.exercises1}/>,
+      <Part part={part2} exercises={props.exercises2}/>,
+      <Part part={part3} exercises={props.exercises3}/>
+    ]
+  )
+}
+const Part = (props) => {
+
+  return (
     <>
       <p>
-        {part1} {props.exercises1}
-      </p>
-      <p>
-        {part2} {props.exercises2}
-      </p>
-      <p>
-        {part3} {props.exercises3}
+        {props.part} {props.exercises}
       </p>
     </>
   )
-}
+} 
 const Total = (props) => {
 
   return (
