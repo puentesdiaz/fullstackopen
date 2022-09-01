@@ -1,3 +1,4 @@
+import { Statistic } from "./Statistic"
 export const Statistics = ({ good, neutral, bad, all, average, positive }) => {
 
   const head = <h1>Statistics</h1>
@@ -13,12 +14,12 @@ export const Statistics = ({ good, neutral, bad, all, average, positive }) => {
   return (
     <>
       {head}
-      <p>Good {good}</p>
-      <p>Neutral {neutral}</p>
-      <p>Bad {bad}</p>
-      <p>All {all}</p>
-      <p>Average {average}</p>
-      <p>Positive {positive} %</p>
+      <Statistic text={"Good"} value={good} /> 
+      <Statistic text={"Neutral"} value={neutral} /> 
+      <Statistic text={"Bad"} value={bad} /> 
+      <Statistic text={"All"} value={all} /> 
+      <Statistic text={"Average"} value={average} /> 
+      <Statistic text={"Positive"} value={positive} />  
     </>
   )
 

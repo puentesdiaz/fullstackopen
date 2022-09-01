@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Statistics } from './Statistics';
+import { Button } from './Button';
 import './App.css';
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
       setAverage(((1*good)+(0*neutral)+(-1*bad))/all)
       setPositive(100*(good/all))
     }    
-  },[all])
+  },[all, bad, good, neutral])
 
   return (
     <div>
@@ -56,15 +57,6 @@ const Header = ({ setGood, setNeutral, setBad }) => {
 
 }
 
-const Button = ({ text, setF }) => {
 
-  return (
-    <>
-      <button onClick={() => { setF()}}>
-        {text}
-      </button>
-    </>
-  )
 
-}
 export default App;
