@@ -7,6 +7,9 @@ function App(props) {
   return (
     <div>
       {props.anecdotes[selected]}
+      <p>
+        <button onClick={()=>{setSelected(1+selected)}}>next anecdotes</button>
+      </p>
     </div>
   )
 }
