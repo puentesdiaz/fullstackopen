@@ -1,10 +1,6 @@
 export const Statistic = ({ text, value }) => { 
-
   let sign = (text === "Positive") ? "%" : ""
   return (
-    <>
-      <p>{text} {value} {sign}</p>
-    </>
+      <tr><td>{text}</td><td>{value} {sign}</td></tr>
   )
-
 }
