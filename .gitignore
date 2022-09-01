@@ -1,5 +1,7 @@
 vs/**
 part1/part1/**
+part1/courseinfo/node_modules/**
+part1/courseinfo/package-lock.json
 part2/part2/**
 part3/part3/**
 part4/part4/**
