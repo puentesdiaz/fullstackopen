@@ -4,6 +4,8 @@ part1/courseinfo/node_modules/**
 part1/courseinfo/package-lock.json
 part1/unicafe/node_modules/**
 part1/unicafe/package-lock.json
+part1/anecdotes/node_modules/**
+part1/anecdotes/package-lock.json
 part2/part2/**
 part3/part3/**
 part4/part4/**
